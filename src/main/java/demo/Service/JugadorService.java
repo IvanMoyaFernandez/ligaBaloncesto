@@ -1,4 +1,4 @@
-package demo.Service;
+/*package demo.Service;
 
         import ch.qos.logback.core.net.SyslogOutputStream;
         import demo.Model.Jugador;
@@ -99,3 +99,4 @@ public class JugadorService {
         //System.out.print(jugador1.toString());
     }
 }
+*/
