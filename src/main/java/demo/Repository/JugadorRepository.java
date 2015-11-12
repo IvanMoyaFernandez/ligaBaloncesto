@@ -23,11 +23,11 @@ public interface JugadorRepository extends PagingAndSortingRepository<Jugador, L
     public List<Jugador> findByEquipoNombreAndPosicion(String nombreEquipo, String posicion);
 
     // D
-    public List<Jugador> findFirstByOrderByCanastasDesc();
+    Jugador findFirstByOrderByCanastasDesc();
 
     // E
-    public List<Jugador> findFirstByOrderByAsistenciasDesc();
+    public List<Jugador> findFirst5ByOrderByAsistenciasDesc();
     // F
-    // @Query("select j from Jugador j where j.equipo.nombre = :equipo ORDER BY j.canastas DESC")
-    // List<Jugador> findByEquipoNombreAndCanastas(@Param("equipo") String equipoNombre, Pageable pageable);
+    // @Query("SELECT j FROM Jugador j WHERE j.equipo.nombre = :equipoNombre ORDER BY j.canastas DESC")
+    // List<Jugador> findByEquipoNombreAndCanastas(String nombreEquipo);
 }
