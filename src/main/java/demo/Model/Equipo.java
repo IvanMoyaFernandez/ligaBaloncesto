@@ -25,11 +25,13 @@ public class Equipo {
     public Date fechaCreacion;
 
     // un equipo tendrá muchos jugadores
+    // esta es la debil
     @JsonIgnore
     @OneToMany(mappedBy = "equipo")
     private Set<Jugador> jugador = new HashSet<>();
 
     // un equipo participará en muchas temporadas
+    // esta es la debil
     @JsonIgnore
     @ManyToMany(mappedBy = "equipos")
     private Set<Temporada> temporadas = new HashSet<>();

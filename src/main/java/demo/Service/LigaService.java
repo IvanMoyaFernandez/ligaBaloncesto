@@ -1,5 +1,6 @@
 package demo.Service;
 
+
 import demo.Model.Equipo;
 import demo.Model.Jugador;
 import demo.Model.Liga;
@@ -468,7 +469,6 @@ public class LigaService {
         //System.out.print(temporada1.toString());
         //System.out.print(temporada2.toString());
     }
-
 
     // CONSULTAS de la pt02
     public void consultas() {

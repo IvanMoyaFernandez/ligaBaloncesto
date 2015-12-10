@@ -34,6 +34,7 @@ public class Jugador {
     public String posicion;
 
     // un jugador solo pertenecerá a un equipo
+    // esta es la fuerte
     @ManyToOne
     private Equipo equipo;
 
